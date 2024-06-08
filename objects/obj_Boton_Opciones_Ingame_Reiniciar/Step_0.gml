@@ -16,6 +16,7 @@ if( Destino != -1 and !instance_exists(fx_Transition_Out_Full) ) {
     with( obj_Jugador_Disparo ) instance_destroy();
     with( obj_Jugador_Disparo_Fuego ) instance_destroy();
     with( obj_Dummy ) instance_destroy();
+    with( obj_Jugador ) instance_destroy();
     with(all) {
         if(persistent == true) and (object_index != control_Gamepad) instance_destroy();
     }
